@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ═══════════════════ VARIABLES ═══════════════════ */
+:root {
+  --cp-cream:   #f7f3ee;
+  --cp-warm:    #ede6da;
+  --cp-dark:    #1c1a16;
+  --cp-mid:     #5a5448;
+  --cp-gold:    #b8955a;
+  --cp-gold-lt: #d4b07a;
+  --cp-border:  rgba(90, 84, 72, 0.15);
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'DM Sans', sans-serif;
+}
+
+/* ═══════════════════ WRAPPER ═══════════════════ */
+.cp-wrapper {
+  min-height: 100vh;
+  background: var(--cp-cream);
+  font-family: var(--font-body);
+}
+
+/* ═══════════════════ HERO ═══════════════════ */
+.cp-hero {
+  background: var(--cp-dark);
+  padding: 56px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Grid texture */
+.cp-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(184,149,90,0.05) 0px, rgba(184,149,90,0.05) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(0deg,  rgba(184,149,90,0.05) 0px, rgba(184,149,90,0.05) 1px, transparent 1px, transparent 60px);
+  pointer-events: none;
+}
+
+.cp-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Eyebrow */
+.cp-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cp-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cp-eyebrow::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--cp-gold);
+}
+
+/* Title */
+.cp-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 4.2rem);
+  font-weight: 300;
+  color: #f0ece4;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.cp-title em {
+  font-style: italic;
+  color: var(--cp-gold-lt);
+}
+
+/* Subtitle */
+.cp-subtitle {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(240, 236, 228, 0.45);
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+/* Deco lines */
+.cp-hero-deco {
+  position: absolute;
+  right: 80px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  pointer-events: none;
+}
+
+.cp-deco-line {
+  width: 1.5px;
+  height: 0;
+  background: linear-gradient(to bottom, transparent, var(--cp-gold), transparent);
+  opacity: 0.2;
+}
+
+.cp-deco-line:nth-child(odd)  { animation: cpLineTall  1.2s cubic-bezier(0.22,1,0.36,1) forwards; }
+.cp-deco-line:nth-child(even) { animation: cpLineShort 1.2s cubic-bezier(0.22,1,0.36,1) forwards; }
+
+@keyframes cpLineTall  { to { height: 180px; } }
+@keyframes cpLineShort { to { height: 100px; } }
+
+/* ═══════════════════ BODY ═══════════════════ */
+.cp-body {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 52px 48px 80px;
+}
+
+/* ═══════════════════ GRID ═══════════════════ */
+.cp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* ═══════════════════ CARD ANIMATION ═══════════════════ */
+.cp-card-wrap {
+  animation: cpFadeUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes cpFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: cpFadeUp 0.5s ease both;
+}
+
+/* ═══════════════════ RESPONSIVE ═══════════════════ */
+@media (max-width: 900px) {
+  .cp-hero-inner  { padding: 0 28px; }
+  .cp-body        { padding: 36px 28px 60px; }
+  .cp-hero-deco   { display: none; }
+  .cp-grid        { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+@media (max-width: 500px) {
+  .cp-hero        { padding: 40px 0 44px; }
+  .cp-hero-inner  { padding: 0 16px; }
+  .cp-body        { padding: 28px 16px 48px; }
+  .cp-title       { font-size: 2.2rem; }
+  .cp-grid        { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
