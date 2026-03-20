@@ -40,7 +40,7 @@ const ProductPage = () => {
             <Breadcrumbs items={breadcrumbItems} />
             <div className="pp-hero-text">
               <span className="pp-eyebrow">{category.name}</span>
-              <h1 className="pp-title">{subcategory.name} <em>Options</em></h1>
+              <h1 className="pp-title">{subcategory.name} <em></em></h1>
               <p className="pp-count">{subcategory.options.length} styles available</p>
             </div>
           </div>

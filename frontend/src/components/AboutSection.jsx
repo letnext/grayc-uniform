@@ -9,11 +9,7 @@ const stats = [
   { icon: <MdVerified />, value: "100%", label: "Quality Assured" },
 ];
 
-const badges = [
-  "Anti Microbial",
-  "Stain Guard Release",
-  "Blood Repellence",
-];
+
 
 function AboutSection() {
   return (
@@ -32,7 +28,7 @@ function AboutSection() {
             <img src="/images/profile.jpg" alt="Gray's Uniform Team" />
             {/* Floating badge */}
             <div className="about-float-badge">
-              <span className="float-num">15+</span>
+              <span className="float-num">35+</span>
               <span className="float-txt">Years of<br/>Excellence</span>
             </div>
           </div>
@@ -48,30 +44,18 @@ function AboutSection() {
         <div className="about-content">
 
           <h2 className="about-title">
-            Gray's <em>Uniform</em>
+            Gray'c <em>Uniforms & Fabrics</em>
           </h2>
           <p className="about-subtitle">Leading Uniform Manufacturer & Supplier</p>
 
           <p className="about-body">
-            Gray's Uniform is a trusted manufacturer and supplier of premium
+            Gray'c Uniform is a trusted manufacturer and supplier of premium
             uniforms for hospitals, schools, colleges, industries and hotels.
             We specialise in high-quality fabrics with advanced protective finishes
             — built to last, designed to impress.
           </p>
 
-          {/* Special finish badges */}
-          <div className="about-badges">
-            {badges.map((b, i) => (
-              <span key={i} className="about-badge">
-                <MdVerified className="badge-icon" /> {b}
-              </span>
-            ))}
-          </div>
-
-          <a href="tel:9965082985" className="about-cta">
-            Contact Us
-            <span className="cta-arrow">→</span>
-          </a>
+         
         </div>
 
       </div>

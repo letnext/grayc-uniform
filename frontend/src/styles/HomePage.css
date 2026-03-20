@@ -7,15 +7,20 @@
    VARIABLES
 ═══════════════════════════════════════════ */
 :root {
-  --hp-cream:    #f7f3ee;
-  --hp-warm:     #ede6da;
-  --hp-dark:     #1c1a16;
-  --hp-mid:      #5a5448;
-  --hp-gold:     #b8955a;
-  --hp-gold-lt:  #d4b07a;
-  --hp-border:   rgba(90, 84, 72, 0.18);
+  --hp-cream:    #eef4fb;
+  --hp-warm:     #ddeaf7;
+  --hp-dark:     #00204c;
+  --hp-mid:      #2f70b0;
+  --hp-gold:     #4a9fd4;
+  --hp-gold-lt:  #7ec3e8;
+  --hp-border:   rgba(74, 101, 128, 0.18);
   --font-display: 'Cormorant Garamond', Georgia, serif;
   --font-body:    'DM Sans', sans-serif;
+
+  /* ── Text color tokens ── */
+  --color-premium:   #023782;
+  --color-quality:  #4a9fd4;
+  --color-uniforms: #023782;
 }
 
 /* ═══════════════════════════════════════════
@@ -27,6 +32,13 @@
   color: var(--hp-dark);
   overflow-x: hidden;
 }
+
+/* ═══════════════════════════════════════════
+   WORD COLOR CLASSES
+═══════════════════════════════════════════ */
+.text-premium  { color: var(--color-premium);  }
+.text-quality  { color: var(--color-quality);  }
+.text-uniforms { color: var(--color-uniforms); }
 
 /* ═══════════════════════════════════════════
    HERO
@@ -145,11 +157,36 @@
   font-family: var(--font-display);
 }
 
-/* Right: Visual */
+/* ── Right: Visual ── */
 .hero-visual {
   position: relative;
   height: 420px;
   animation: heroFadeUp 0.9s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── LOGO ── */
+.hero-logo-wrap {
+  position: absolute;
+  bottom: 350px;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 100px; */
+  width: 140px;
+  height: 140px;
+  /* border-radius: 50%;
+  background: var(--hp-cream);
+  box-shadow: 0 8px 32px rgba(0, 32, 76, 0.12), 0 0 0 1px var(--hp-border);
+  animation: heroFadeUp 0.9s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both; */
+}
+
+.hero-logo-img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-badge {
@@ -360,6 +397,18 @@
 
   .hero-visual {
     height: 260px;
+  }
+
+  .hero-logo-wrap {
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    right: 10px;
+  }
+
+  .hero-logo-img {
+    width: 70px;
+    height: 70px;
   }
 
   .collections-section {

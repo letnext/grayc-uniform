@@ -17,7 +17,7 @@ const Footer = () => {
 
       {/* ── TOP DECORATIVE STRIP ── */}
       <div className="footer-strip">
-        {["Premium Quality", "✦", "Prompt Delivery", "✦", "Custom Designs", "✦", "Bulk Orders", "✦", "Anti Microbial", "✦", "Stain Guard", "✦"].map((t, i) => (
+        {["Premium Quality", "✦", "Custom Designs", "✦", "Prompt Delivery", "✦" ].map((t, i) => (
           <span key={i} className="strip-item">{t}</span>
         ))}
       </div>
@@ -27,16 +27,12 @@ const Footer = () => {
 
         {/* Brand */}
         <div className="footer-brand">
-          <h2 className="footer-logo">Gray'c<br /><em>Uniform</em></h2>
+          <h2 className="footer-logo">Gray'c<br /><em>Uniforms & Fabrics</em></h2>
           <p className="footer-tagline">
             Crafting excellence in every stitch.<br />
             Trusted by schools, corporates & industries.
           </p>
-          <div className="footer-badges">
-            <span className="badge">Anti Microbial</span>
-            <span className="badge">Stain Guard</span>
-            <span className="badge">Blood Repellent</span>
-          </div>
+          
           <div className="footer-socials">
             <a href="#" className="social-btn" aria-label="Facebook"><FaFacebookF /></a>
             <a href="#" className="social-btn" aria-label="Instagram"><FaInstagram /></a>
@@ -50,13 +46,13 @@ const Footer = () => {
           <ul className="footer-list">
             <li>
               <MdPerson className="footer-icon" />
-              <span>CEO: Nattrayan A.</span>
+              <span>CEO: Duraisamy .N N</span>
             </li>
             <li>
               <MdLocationOn className="footer-icon" />
-              <span>
-                34, Thiruvika Street,<br />
-                New Teacher Street Colony,<br />
+              <span>Rajvel textile
+                34, Thiru vi kaa Street,<br />
+                New Teacher  Colony,<br />
                 Erode — 638 012
               </span>
             </li>
@@ -70,8 +66,8 @@ const Footer = () => {
             <li>
               <MdPhone className="footer-icon" />
               <div className="contact-links">
-                <a href="tel:9965082985" className="footer-link">+91 99650 82985</a>
-                <a href="tel:9385309985" className="footer-link">+91 93853 09985</a>
+                <a href="tel:9944211453" className="footer-link">+91 99442 11453</a>
+                <a href="tel:9842764711" className="footer-link">+91 98427 64711</a>
               </div>
             </li>
             <li>

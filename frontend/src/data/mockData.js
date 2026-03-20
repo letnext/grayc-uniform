@@ -1,26 +1,23 @@
 export const categories = [
   {
     id: "hospital-uniform",
-    name: "Hospital Uniform",
-    image: "/images/hospital_uniform_1773050292494.png",
+    name: "Hospital Uniforms",
+    image: "/images/scrub.jpg",
     subcategories: [
 
       {
   id: "scrub",
-  name: "Scrub",
+  name: "Scrub Models",
   image: "/images/scrub.jpg",
-  options: [
-    { id: "half-sleeve", name: "Half Sleeve",image: "/scrubs/scrubs1.jpg" },
-    { id: "full-sleeve", name: "Full Sleeve",image:"/images/formals.jpg" },
-  ],
+  
 },
       {
         id: "lab-coat",
         name: "Lab Coat",
-        image: "/images/labcout.jpg",
+        image: "/images/labcoat.png",
         options: [
-          { id: "half-sleeve", name: "Half Sleeve",image:"/images/formals.jpg" },
-          { id: "full-sleeve", name: "Full Sleeve",image:"/images/formals.jpg" },
+          { id: "half-sleeve", name: "Half Sleeve",image:"/images/labcoat/halfsleeve.png" },
+          { id: "full-sleeve", name: "Full Sleeve",image:"/images/labcoat/fullsleeve.png" },
         ],
       },
       {
@@ -28,41 +25,49 @@ export const categories = [
         name: "Doctor Coat",
         image: "/images/doctorcout.jpg",
         options: [
-          { id: "half-sleeve", name: "Half Sleeve",image:"/images/formals.jpg" },
-          { id: "full-sleeve", name: "Full Sleeve" ,image:"/images/formals.jpg"},
+          { id: "half-sleeve", name: "Half Sleeve",image:"/images/doccoat/halfsleeve1.png" },
+          { id: "full-sleeve", name: "Full Sleeve" ,image:"/images/doccoat/fullsleeve1.png"},
         ],
       },
       {
         id: "tn-nursing-uniform",
-        name: "TN Nursing Uniform",
+        name: "TN GOVT Nursing Uniform",
         image: "/images/nurseuniform.jpg",
         options: [
-          { id: "chudidhar-with-coat", name: "Chudidhar with Coat",image:"/images/chudicout.jpg" },
-          { id: "pant-shirt", name: "Pant / Shirt" ,image:"/images/girlsshirt.jpg"},
-          { id: "thai-uniform", name: "Thai Uniform" ,image:"/images/tnnurseuniform.jpg"},
+          { id: "chudidhar-with-coat", name: "Chudidhar with Coat",image:"/images/tnnurse/chudicout.png" },
+          { id: "pant-shirt", name: "Pant / Shirt" ,image:"/images/tnnurse/girlsshirt.png"},
+          { id: "pant-shirt", name: "Pant / Shirt" ,image:"/images/tnnurse/girl.png"},
+          { id: "pant-shirt", name: "Pant / Shirt" ,image:"/images/tnnurse/girl2.png"},
+          // { id: "thai-uniform", name: "Thai Uniform" ,image:"/images/tnnurseuniform.jpg"},
         ],
       },
       {
+        id: "nursing-uniform",
+        name: "Nursing Uniforms",
+        image: "/images/nursing/nursing6.png",
+       
+      },
+      {
         id: "theater-uniform",
-        name: "Theater Uniform",
+        name: "Theater Uniforms",
         image: "/images/theateruniform.jpg",
         options: [
-          { id: "cap", name: "Cap",image:"/images/therateruniform/doctorcap.jpg" },
-          { id: "mask", name: "Mask",image:"/images/therateruniform/doctormask.jpg" },
-          { id: "eye-pad", name: "Eye Pad",image:"/images/therateruniform/doctoreyepad.jpg" },
-          { id: "shape-leggings", name: "Shape Leggings",image:"/images/therateruniform/doctorpant.jpg" },
-          { id: "large-leggings", name: "Large Leggings",image:"/images/therateruniform/doctorlong.jpg" },
-          { id: "abdominal-sheet", name: "Abdominal Sheet",image:"/images/therateruniform/sheet.jpg" },
-          { id: "long-towel", name: "Long Towel",image:"/images/therateruniform/longtowel.jpg" },
-          { id: "center-hole-towel", name: "Center Hole Towel",image:"/images/therateruniform/centertowel.jpg" },
+          { id: "Surgical Item", name: "Surgical Item",image:"/images/therateruniform/all.png" },
+          { id: "pyjammaset", name: "pyjamma set",image:"/images/therateruniform/pyjammaset.jpeg" },
+          { id: "orthopaedic", name: "orthopaedic Apron",image:"/images/therateruniform/ortho.jpeg" },
+          { id: "shape-leggings", name: "large leggins 18 inches * 36 inches",image:"/images/therateruniform/largeleggin.png" },
+          // { id: "large-leggings", name: "Large Leggings",image:"/images/therateruniform/doctorlong.jpg" },
+          // { id: "abdominal-sheet", name: "Abdominal Sheet",image:"/images/therateruniform/sheet.jpg" },
+          // { id: "long-towel", name: "Long Towel",image:"/images/therateruniform/longtowel.jpg" },
+          // { id: "center-hole-towel", name: "Center Hole Towel",image:"/images/therateruniform/centertowel.jpg" },
         ],
       },
-      { id: "bed-sheet-pillow", name: "Bed Sheet with Pillow",image: "/images/pillow.jpg" },
+      { id: "bed-sheet-pillow", name: "Bed Sheet & Pillow cover",image: "/images/pillow.jpg" },
     ],
   },
   {
     id: "school-uniform",
-    name: "School Uniform",
+    name: "School Uniforms",
     image: "/images/school_uniform_1773050312810.png",
     subcategories: [
       { id: "government-school-uniform", name: "Government School Uniform" ,image:"/images/goverment.jpg"},
@@ -73,7 +78,7 @@ export const categories = [
   },
   {
     id: "college-uniform",
-    name: "College Uniform",
+    name: "College Uniforms",
     image: "/images/college_uniform_1773050352464.png",
     subcategories: [
       { id: "pant-shirt", name: "Pant & Shirt",image:"/images/shirt.jpg" },
@@ -83,7 +88,7 @@ export const categories = [
   },
   {
     id: "industrial-uniform",
-    name: "Industrial Uniform",
+    name: "Industrial Uniforms",
     image: "/images/industry.jpg",
     subcategories: [
       { id: "staff-uniform", name: "Staff Uniform", image:"/images/industryuniform/staffuniform.jpg" },
@@ -94,7 +99,7 @@ export const categories = [
   },
   {
     id: "hotel-uniform",
-    name: "Hotel Uniform",
+    name: "Hotel Uniforms",
     image: "/images/hotel_uniform_1773050385922.png",
     subcategories: [
       { id: "front-office-uniform", name: "Front Office Uniform" ,image:"/images/hoteluniform/frontoffice.jpg"},
@@ -131,8 +136,8 @@ export const categories = [
   },
   {
     id: "home-furniture",
-    name: "Home Furniture",
-    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800",
+    name: "Home Furnishing",
+    image: "/images/homef.jpeg",
     subcategories: [
       {
         id: "bath-towels",
@@ -158,7 +163,7 @@ export const categories = [
   },
   {
     id: "fabrics",
-    name: "Fabrics",
+    name: "Woven Fabrics",
     image: "images/fabrics.jpg",
     subcategories: [
       { id: "yes", name: "100% cotten",image:"/images/fabric/fabric1.jpg" },
@@ -180,19 +185,19 @@ export const getProducts = (categoryId, subcategoryId, optionId = null) => {
   }));
 };
  export const productImages = {
-  "scrub-half-sleeve": [
-    { title : "code : 1",  image: "/scrubs/scrubshalf/scrubh1.jpg" },
-    { title : "code : 2",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "code : 3",  image: "https://picsum.photos/seed/scrub-half-3/300/400" },
-    { title : "code : 4",  image: "https://picsum.photos/seed/scrub-half-4/300/400" },
-    { title : "code : 5",  image: "https://picsum.photos/seed/scrub-half-5/300/400" },
-    { title : "code : 6",  image: "https://picsum.photos/seed/scrub-half-6/300/400" },
-    { title : "code : 7",  image: "https://picsum.photos/seed/scrub-half-7/300/400" },
-    { title : "code : 8",  image: "https://picsum.photos/seed/scrub-half-8/300/400" },
-    { title : "code : 9",  image: "https://picsum.photos/seed/scrub-half-9/300/400" },
-    { title : "code : 10", image: "https://picsum.photos/seed/scrub-half-10/300/400" },
-    { title : "code : 11", image: "https://picsum.photos/seed/scrub-half-11/300/400" },
-    { title : "code : 12", image: "https://picsum.photos/seed/scrub-half-12/300/400" },
+  "scrub": [
+    { title : "code : 1",  image: "/scrubs/scrub1.jpeg" },
+    { title : "code : 2",  image: "/scrubs/scrub2.jpeg" },
+    { title : "code : 3",  image: "/scrubs/scrub3.jpeg" },
+    { title : "code : 4",  image: "/scrubs/scrub4.jpeg" },
+    { title : "code : 5",  image: "/scrubs/scrub5.jpeg" },
+    { title : "code : 6",  image: "/scrubs/scrub6.jpeg" },
+    { title : "code : 7",  image: "/scrubs/scrub7.jpeg" },
+    { title : "code : 8",  image: "/scrubs/scrub8.jpeg" },
+    { title : "code : 9",  image: "/scrubs/scrub9.jpeg" },
+    { title : "code : 10", image: "/scrubs/scrub10.jpeg" },
+    // { title : "code : 11", image: "https://picsum.photos/seed/scrub-half-11/300/400" },
+    // { title : "code : 12", image: "https://picsum.photos/seed/scrub-half-12/300/400" },
   ],
 
   "scrub-full-sleeve": [
@@ -223,4 +228,24 @@ export const getProducts = (categoryId, subcategoryId, optionId = null) => {
            { title : "code : 11",  image:"https://picsum.photos/200/300"},
            { title : "code : 12",  image:"https://picsum.photos/200/300"},
           ],
+          "bed-sheet-pillow":[
+            { title : "code : 1",  image:"/images/pillowbed/tri.png"},
+            { title : "code : 1",  image:"/images/pillowbed/tri2.png"},
+            { title : "code : 1",  image:"/images/pillowbed/tri3.png"},
+            { title : "code : 1",  image:"/images/pillowbed/tri4.png"},
+          ],
+          "nursing-uniform":[
+            { title : "code : 1",  image:"/images/nursing/nursing1.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing2.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing3.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing4.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing5.png"},
+          ],
+          "government-school-uniform":[
+            { title : "code : 1",  image:"/images/nursing/nursing1.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing2.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing3.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing4.png"},
+            { title : "code : 1",  image:"/images/nursing/nursing5.png"},
+          ]
 }

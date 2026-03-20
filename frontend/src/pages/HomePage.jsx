@@ -2,6 +2,7 @@ import { categories } from '../data/mockData';
 import CategoryCard from '../components/CategoryCard';
 import '../styles/HomePage.css';
 import AboutSection from "../components/AboutSection";
+import logo from '/logo.png';
 
 const HomePage = () => {
   return (
@@ -11,11 +12,11 @@ const HomePage = () => {
       <section className="hero">
         <div className="hero-inner">
           <div className="hero-text">
-            <span className="hero-eyebrow">Est. Since Excellence</span>
+            {/* <span className="hero-eyebrow">Est. Since 1991 Excellence</span> */}
             <h1 className="hero-title">
-              Premium <br />
-              <em>Quality</em> <br />
-              Uniforms
+              <span className="text-premium">Premium</span>{" "}
+              <span className="text-quality">Quality</span>{" "}
+              <span className="text-uniforms">Uniforms & Fabrics</span>
             </h1>
             <p className="hero-subtitle">
               High quality · Competitive pricing · Prompt delivery.<br />
@@ -28,7 +29,11 @@ const HomePage = () => {
             </div>
           </div>
 
+          {/* ── RIGHT SIDE: Logo + Visual ── */}
           <div className="hero-visual">
+            <div className="hero-logo-wrap">
+              <img src={logo} alt="Brand Logo" className="hero-logo-img" />
+            </div>
             <div className="hero-badge">
               <span>Premium</span>
               <span>Textile</span>
@@ -44,10 +49,12 @@ const HomePage = () => {
         {/* Marquee strip */}
         <div className="marquee-strip">
           <div className="marquee-track">
-            {['School Uniforms', 'Corporate Wear', 'Sports Kits', 'Industrial Uniforms',
-              'Custom Embroidery', 'Bulk Orders', 'School Uniforms', 'Corporate Wear',
-              'Sports Kits', 'Industrial Uniforms', 'Custom Embroidery', 'Bulk Orders'].map((t, i) => (
-              <span key={i} className="marquee-item">{t} <span className="marquee-dot">✦</span></span>
+            {['Hospital Uniforms','School & College Uniforms', 'Corporate Wear',  'Industrial Uniforms','Hotels, Bars & Spa',
+              'Custom Embroidery',  'Home Furnishing & all type of Woven Fabrics upto 120 inches '
+              , 'Industrial Uniforms', 'Custom Embroidery', ].map((t, i) => (
+              <span key={i} className="marquee-item">
+                {t} <span className="marquee-dot">✦</span>
+              </span>
             ))}
           </div>
         </div>
@@ -57,7 +64,7 @@ const HomePage = () => {
       <section className="collections-section" id="collections">
         <div className="section-header">
           <p className="section-label">What We Offer</p>
-          <h2 className="section-title">Our Collections</h2>
+          <h2 className="section-title">Our Products</h2>
         </div>
 
         <div className="collections-grid">

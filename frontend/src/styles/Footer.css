@@ -2,7 +2,7 @@
 
 /* ═══════════════════ VARIABLES ═══════════════════ */
 :root {
-  --ft-bg:        #0e0c09;
+  --ft-bg:        #00204c;
   --ft-surface:   #1a1710;
   --ft-border:    rgba(184, 149, 90, 0.15);
   --ft-gold:      #b8955a;
@@ -28,7 +28,7 @@
   padding: 10px 0;
   display: flex;
   overflow: hidden;
-  gap: 0;
+  gap: 130px;
   white-space: nowrap;
 }
 
