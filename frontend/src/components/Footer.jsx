@@ -36,7 +36,7 @@ const Footer = () => {
           <div className="footer-socials">
             <a href="#" className="social-btn" aria-label="Facebook"><FaFacebookF /></a>
             <a href="#" className="social-btn" aria-label="Instagram"><FaInstagram /></a>
-            <a href="https://wa.me/919965082985" className="social-btn" aria-label="WhatsApp"><FaWhatsapp /></a>
+            <a href="https://wa.me/919944211453" className="social-btn" aria-label="WhatsApp"><FaWhatsapp /></a>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ const Footer = () => {
             <li>
               <MdLocationOn className="footer-icon" />
               <span>Rajvel textile
-                34, Thiru vi kaa Street,<br />
+                34, Thiru vi ka Street,<br />
                 New Teacher  Colony,<br />
                 Erode — 638 012
               </span>

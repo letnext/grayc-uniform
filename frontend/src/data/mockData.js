@@ -4,65 +4,48 @@ export const categories = [
     name: "Hospital Uniforms",
     image: "/images/scrub.jpg",
     subcategories: [
-
       {
-  id: "scrub",
-  name: "Scrub Models",
-  image: "/images/scrub.jpg",
-  
-},
+        id: "scrub",
+        name: "Scrub Models",
+        image: "/images/scrub.jpg",
+      },
       {
         id: "lab-coat",
         name: "Lab Coat",
         image: "/images/labcoat.png",
-        options: [
-          { id: "half-sleeve", name: "Half Sleeve",image:"/images/labcoat/halfsleeve.png" },
-          { id: "full-sleeve", name: "Full Sleeve",image:"/images/labcoat/fullsleeve.png" },
-        ],
+    
       },
       {
         id: "doctor-coat",
         name: "Doctor Coat",
         image: "/images/doctorcout.jpg",
-        options: [
-          { id: "half-sleeve", name: "Half Sleeve",image:"/images/doccoat/halfsleeve1.png" },
-          { id: "full-sleeve", name: "Full Sleeve" ,image:"/images/doccoat/fullsleeve1.png"},
-        ],
+        // options: [
+        //   { id: "half-sleeve", name: "Half Sleeve", image: "/images/doccoat/halfsleeve1.png" },
+        //   { id: "full-sleeve", name: "Full Sleeve", image: "/images/doccoat/fullsleeve1.png" },
+        // ],
       },
       {
         id: "tn-nursing-uniform",
         name: "TN GOVT Nursing Uniform",
         image: "/images/nurseuniform.jpg",
-        options: [
-          { id: "chudidhar-with-coat", name: "Chudidhar with Coat",image:"/images/tnnurse/chudicout.png" },
-          { id: "pant-shirt", name: "Pant / Shirt" ,image:"/images/tnnurse/girlsshirt.png"},
-          { id: "pant-shirt", name: "Pant / Shirt" ,image:"/images/tnnurse/girl.png"},
-          { id: "pant-shirt", name: "Pant / Shirt" ,image:"/images/tnnurse/girl2.png"},
-          // { id: "thai-uniform", name: "Thai Uniform" ,image:"/images/tnnurseuniform.jpg"},
-        ],
       },
       {
         id: "nursing-uniform",
         name: "Nursing Uniforms",
         image: "/images/nursing/nursing6.png",
-       
       },
       {
         id: "theater-uniform",
         name: "Theater Uniforms",
         image: "/images/theateruniform.jpg",
         options: [
-          { id: "Surgical Item", name: "Surgical Item",image:"/images/therateruniform/all.png" },
-          { id: "pyjammaset", name: "pyjamma set",image:"/images/therateruniform/pyjammaset.jpeg" },
-          { id: "orthopaedic", name: "orthopaedic Apron",image:"/images/therateruniform/ortho.jpeg" },
-          { id: "shape-leggings", name: "large leggins 18 inches * 36 inches",image:"/images/therateruniform/largeleggin.png" },
-          // { id: "large-leggings", name: "Large Leggings",image:"/images/therateruniform/doctorlong.jpg" },
-          // { id: "abdominal-sheet", name: "Abdominal Sheet",image:"/images/therateruniform/sheet.jpg" },
-          // { id: "long-towel", name: "Long Towel",image:"/images/therateruniform/longtowel.jpg" },
-          // { id: "center-hole-towel", name: "Center Hole Towel",image:"/images/therateruniform/centertowel.jpg" },
+          { id: "Surgical Item", name: "Surgical Item", image: "/images/therateruniform/all.png" },
+          { id: "pyjammaset", name: "pyjamma set", image: "/images/therateruniform/pyjammaset.jpeg" },
+          { id: "orthopaedic", name: "orthopaedic Apron", image: "/images/therateruniform/ortho.jpeg" },
+          { id: "shape-leggings", name: "large leggins 18 inches * 36 inches", image: "/images/therateruniform/largeleggin.png" },
         ],
       },
-      { id: "bed-sheet-pillow", name: "Bed Sheet & Pillow cover",image: "/images/pillow.jpg" },
+      { id: "bed-sheet-pillow", name: "Bed Sheet & Pillow cover", image: "/images/pillow.jpg" },
     ],
   },
   {
@@ -70,10 +53,10 @@ export const categories = [
     name: "School Uniforms",
     image: "/images/school_uniform_1773050312810.png",
     subcategories: [
-      { id: "government-school-uniform", name: "Government School Uniform" ,image:"/images/goverment.jpg"},
-      { id: "matriculation", name: "Matriculation" ,image:"/images/metric.jpg"},
-      { id: "cbse", name: "CBSE" ,image:"/images/cbse.jpg"},
-      { id: "all-type-uniform-sarees", name: "All Type Uniform Sarees" ,image:"/images/saree.jpg"},
+      { id: "cbse", name: "CBSE", image: "/images/cbse.jpg" },
+      { id: "matriculation", name: "Matriculation", image: "/images/metric.jpg" },
+      { id: "government-school-uniform", name: "Government School Uniform", image: "/images/goverment.jpg" },
+      { id: "nss", name: "NSS, NCC & Scout", image: "/images/nss.png" },
     ],
   },
   {
@@ -81,9 +64,9 @@ export const categories = [
     name: "College Uniforms",
     image: "/images/college_uniform_1773050352464.png",
     subcategories: [
-      { id: "pant-shirt", name: "Pant & Shirt",image:"/images/shirt.jpg" },
-      { id: "blazers", name: "Blazers" ,image:"/images/blazer.jpg"},
-      { id: "lab-coat", name: "Lab Coat",image:"/images/labcoutuniform.jpg" },
+      { id: "pant-shirt", name: "Pant & Shirt", image: "/images/college.jpg" },
+      { id: "blazers", name: "Blazers", image: "/images/blazar.png" },
+      { id: "lab-coat", name: "Lab Coat", image: "/images/labcoutuniform.png" },
     ],
   },
   {
@@ -91,10 +74,11 @@ export const categories = [
     name: "Industrial Uniforms",
     image: "/images/industry.jpg",
     subcategories: [
-      { id: "staff-uniform", name: "Staff Uniform", image:"/images/industryuniform/staffuniform.jpg" },
-      { id: "labour-uniform", name: "Labour Uniform", image:"/images/industryuniform/labouruniform.jpg" },
-      { id: "security-uniform", name: "Security Uniform", image:"/images/industryuniform/securityuniform.jpg" },
-      { id: "fire-vendor-uniform", name: "Fire Vendor Uniform",image:"/images/industryuniform/fireuniform.jpg" },
+      { id: "technision-uniform", name: "Technision Uniform", image: "/images/staffuniform.jpg" },
+      { id: "labour-uniform", name: "Labour Uniform", image: "/images/labouruniform.jpg" },
+      { id: "security-uniform", name: "Security Uniform", image: "/images/industryuniform/securityuniform.jpg" },
+      { id: "fire-vendor-uniform", name: "Fire Retardant Uniform", image: "/images/fireuniform.png" },
+      { id: "staff-uniform", name: "Staff Uniform", image: "/images/staff.png" },
     ],
   },
   {
@@ -102,38 +86,14 @@ export const categories = [
     name: "Hotel Uniforms",
     image: "/images/hotel_uniform_1773050385922.png",
     subcategories: [
-      { id: "front-office-uniform", name: "Front Office Uniform" ,image:"/images/hoteluniform/frontoffice.jpg"},
-      { id: "chef-uniform", name: "Chef Uniform" ,image:"/images/hoteluniform/chefuniform.jpg"},
-      { id: "butler-uniform", name: "Biller Uniform" ,image:"/images/hoteluniform/billeruniform.jpg"},
-      { id: "house-cleaning-uniform", name: "House Cleaning Uniform" ,image:"/images/hoteluniform/cleaninguniform.jpg"},
-      { id: "security-uniform", name: "Security Uniform",image:"/images/hoteluniform/hotelsecuniform.jpg" },
+      { id: "front-office-uniform", name: "Front Office Uniform", image: "/images/frontoffice.png" },
+      { id: "chef-uniform", name: "Chef Uniform", image: "/images/chefuniform.jpg" },
+      { id: "butler-uniform", name: "Bulter Uniform", image: "/images/bulteruniform.png" },
+      { id: "house-cleaning-uniform", name: "House Keeping Uniform", image: "/images/cleaninguniform.jpg" },
+      { id: "security-uniform", name: "Security Uniform", image: "/images/hotelsecuniform.jpg" },
     ],
   },
-  {
-    id: "formals",
-    name: "Formals",
-    image: "/images/formals.jpg",
-    subcategories: [
-      {
-        id: "pant",
-        name: "Pant",
-        image:"/images/formals/formalpant.jpg",
-        options: [
-          { id: "cotton", name: "Cotton",image:"/images/formals/cotten.jpg" },
-          { id: "linen", name: "Linen" ,image:"/images/formals/leninpant.jpg"},
-        ],
-      },
-      {
-        id: "shirt",
-        name: "Shirt",
-        image:"/images/formals/formalshirt.jpg",
-        options: [
-          { id: "cotton", name: "Cotton",image:"/images/formals/cottenshirt.jpg" },
-          { id: "linen", name: "Linen",image:"/images/formals/leninshirt.jpg" },
-        ],
-      },
-    ],
-  },
+  
   {
     id: "home-furniture",
     name: "Home Furnishing",
@@ -141,111 +101,135 @@ export const categories = [
     subcategories: [
       {
         id: "bath-towels",
-        name: "Bath Towels",
-        image:"/images/homefuriture/bathtowel.jpg",
+        name: "Bath Towels - 75cm*150cm",
+        image: "/images/homefuriture/bathtowel.jpg",
         options: [
-          { id: "cotton", name: "Cotton",image: "/images/homefuriture/towel1.jpg" },
-          { id: "100-cotton", name: "100% Cotton",image:"/images/homefuriture/towel2.jpg" },
-          { id: "bamboo", name: "Bamboo",image:"/images/homefuriture/towel3.jpg" },
+          { id: "cotton", name: "100% Combed Cotton ", image: "/images/homefuriture/towel1.jpg" },
+          { id: "100-cotton", name: "100% Cotton Premium Waffle ", image: "/images/homefuriture/towel2.jpg" },
+          { id: "bamboo", name: "Viscose/Bamboo blended", image: "/images/homefuriture/towel3.jpg" },
         ],
       },
       {
         id: "bed-sheet-pillow-covers",
-        name: "Bed Sheet with Pillow Covers",
-        image:"/images/homefuriture/pillow.jpg",
+        name: "Bed Sheet - 60*90/90*100/108*108 inches with Pillow Covers - 18*27 inches",
+        image: "/images/homefuriture/pillow.jpg",
         options: [
-          { id: "satin", name: "Satin",image:"/images/homefuriture/pillow1.jpg" },
-          { id: "yarn", name: "Yarn", image:"/images/homefuriture/pillow2.jpg" },
-          { id: "features", name: "Features" ,image:"/images/homefuriture/pillow3.jpg"},
+          { id: "satin", name: "Satin Stripes", image: "/images/homefuriture/pillow1.jpg" },
+          { id: "yarn", name: "Yarn Byed Stripes", image: "/images/homefuriture/pillow2.jpg" },
+          { id: "jaquard", name: "Jaquard ", image: "/images/homefuriture/pillow3.jpg" },
         ],
       },
     ],
   },
   {
     id: "fabrics",
-    name: "Woven Fabrics",
+    name: "Woven Fabrics  ",
     image: "images/fabrics.jpg",
     subcategories: [
-      { id: "yes", name: "100% cotten",image:"/images/fabric/fabric1.jpg" },
-      { id: "no", name: "casual", image:"/images/fabric/fabric2.jpg" },
-      {id:"maybe",name:"Printed",image:"/images/fabric/fabric2.jpg"}
+      { id: "yes", name: "100% Linen-Solid/Stripes,checked & Printed", image: "/images/fabric/fabric1.jpg" },
+      { id: "no", name: "100% Modal-Solid/Stripes,checked & Printed", image: "/images/fabric/fabric2.jpg" },
+      { id: "maybe", name: "All type of Yarn dyed , Fabric dyed & Printed fabrics. ", image: "/images/fabric/fabric3.jpg" },
+      { id: "may", name: "Specilized Category", image: "/images/fabric/fabric4.png" },
+      // { id: "maybe", name: "Fire retardant Finished ", image: "/images/fabric/fabric2.jpg" },
+      // { id: "maybe", name: "Water & Stain repellant ", image: "/images/fabric/fabric2.jpg" },
+      // { id: "maybe", name: "Wrinkle free", image: "/images/fabric/fabric2.jpg" },
     ],
   },
 ];
 
 // Helper to get dummy products for a given category/subcategory/option
 export const getProducts = (categoryId, subcategoryId, optionId = null) => {
-  // Generate a seed based on the IDs to have consistent images
+//   // Generate a seed based on the IDs to have consistent images
   const seed = `${categoryId}-${subcategoryId}-${optionId || ""}`;
-  
+
   return Array.from({ length: 12 }).map((_, i) => ({
     id: `prod-${seed}-${i}`,
     title: `Code : ${i + 1}`,
-    image: `https://picsum.photos/seed/${seed}-${i}/600/800`, // Professional placeholder
+    image: `https://picsum.photos/seed/${seed}-${i}/600/800`,
   }));
 };
- export const productImages = {
-  "scrub": [
-    { title : "code : 1",  image: "/scrubs/scrub1.jpeg" },
-    { title : "code : 2",  image: "/scrubs/scrub2.jpeg" },
-    { title : "code : 3",  image: "/scrubs/scrub3.jpeg" },
-    { title : "code : 4",  image: "/scrubs/scrub4.jpeg" },
-    { title : "code : 5",  image: "/scrubs/scrub5.jpeg" },
-    { title : "code : 6",  image: "/scrubs/scrub6.jpeg" },
-    { title : "code : 7",  image: "/scrubs/scrub7.jpeg" },
-    { title : "code : 8",  image: "/scrubs/scrub8.jpeg" },
-    { title : "code : 9",  image: "/scrubs/scrub9.jpeg" },
-    { title : "code : 10", image: "/scrubs/scrub10.jpeg" },
-    // { title : "code : 11", image: "https://picsum.photos/seed/scrub-half-11/300/400" },
-    // { title : "code : 12", image: "https://picsum.photos/seed/scrub-half-12/300/400" },
+
+export const productImages = {
+  "bed-sheet-pillow": [
+    { title: "code : 1", image: "/images/pillowbed/tri.png" },
+    { title: "code : 2", image: "/images/pillowbed/tri2.png" },
+    { title: "code : 3", image: "/images/pillowbed/tri3.png" },
+    { title: "code : 4", image: "/images/pillowbed/tri4.png" },
   ],
 
-  "scrub-full-sleeve": [
-    { title : "Scrub Full Sleeve 1",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 2",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 3",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 4",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 5",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 6",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 7",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 8",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 9",  image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 10", image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 11", image: "https://picsum.photos/seed/scrub-half-2/300/400" },
-    { title : "Scrub Full Sleeve 12", image: "https://picsum.photos/seed/scrub-half-2/300/400" },
+  "doctor-coat":[
+             {  title: "Half Sleeve", image: "/images/doccoat/halfsleeve1.png" },
+          { title: "Full Sleeve", image: "/images/doccoat/fullsleeve1.png" },
   ],
-  "lab-coat":[
-           { title : "code : 1",  image:"https://picsum.photos/200/300"},
-           { title : "code : 2",  image:"https://picsum.photos/200/300"},
-           { title : "code : 3",  image:"https://picsum.photos/200/300"},
-           { title : "code : 4",  image:"https://picsum.photos/200/300"},
-           { title : "code : 5",  image:"https://picsum.photos/200/300"},
-           { title : "code : 6",  image:"https://picsum.photos/200/300"},
-           { title : "code : 7",  image:"https://picsum.photos/200/300"},
-           { title : "code : 8",  image:"https://picsum.photos/200/300"},
-           { title : "code : 9",  image:"https://picsum.photos/200/300"},
-           { title : "code : 10",  image:"https://picsum.photos/200/300"},
-           { title : "code : 11",  image:"https://picsum.photos/200/300"},
-           { title : "code : 12",  image:"https://picsum.photos/200/300"},
-          ],
-          "bed-sheet-pillow":[
-            { title : "code : 1",  image:"/images/pillowbed/tri.png"},
-            { title : "code : 1",  image:"/images/pillowbed/tri2.png"},
-            { title : "code : 1",  image:"/images/pillowbed/tri3.png"},
-            { title : "code : 1",  image:"/images/pillowbed/tri4.png"},
-          ],
-          "nursing-uniform":[
-            { title : "code : 1",  image:"/images/nursing/nursing1.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing2.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing3.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing4.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing5.png"},
-          ],
-          "government-school-uniform":[
-            { title : "code : 1",  image:"/images/nursing/nursing1.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing2.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing3.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing4.png"},
-            { title : "code : 1",  image:"/images/nursing/nursing5.png"},
-          ]
-}
+  "tn-nursing-uniform":[
+          {  title: "Chudidhar with Coat", image: "/images/tnnurse/chudicout.png" },
+          {  title: "Pant / Shirt", image: "/images/tnnurse/girlsshirt.png" },
+          {  title: "Pant / Shirt", image: "/images/tnnurse/girl.png" },
+          { title: "Pant / Shirt", image: "/images/tnnurse/girl2.png" },
+    
+
+  ],
+
+  "nursing-uniform": [
+    { title: "code : 1", image: "/images/nursing/nursing1.png" },
+    { title: "code : 2", image: "/images/nursing/nursing2.png" },
+    { title: "code : 3", image: "/images/nursing/nursing3.png" },
+    { title: "code : 4", image: "/images/nursing/nursing4.png" },
+    { title: "code : 5", image: "/images/nursing/nursing5.png" },
+  ],
+
+  "government-school-uniform": [
+    { title: "code : 1", image: "/images/governmentuni/1.png" },
+    { title: "code : 2", image: "/images/governmentuni/6.png" },
+    { title: "code : 3", image: "/images/governmentuni/9.png" },
+    { title: "code : 4", image: "/images/governmentuni/11.png" },
+  ],
+
+  cbse: [
+    { title: "code : 1", image: "/images/cbse/cbse1.png" },
+    { title: "code : 2", image: "/images/cbse/cbse2.png" },
+    { title: "code : 3", image: "/images/cbse/cbse3.png" },
+    { title: "code : 4", image: "/images/cbse/cbse4.png" },
+    { title: "code : 5", image: "/images/cbse/cbse5.png" },
+  ],
+
+  "nss": [
+    { title: "code : 1", image: "/images/nss/nss1.png" },
+    { title: "code : 2", image: "/images/nss/nss2.png" },
+    { title: "code : 3", image: "/images/nss/nss3.png" },
+  ],
+
+  "college-uniform": [
+    { title: "Pant & Shirt", image: "/images/college/college1.png" },
+    { title: "Pant & Shirt", image: "/images/college/college2.png" },
+    { title: "Pant & Shirt", image: "/images/college.jpg" },
+    { title: "Blazers", image: "/images/blazar.png" },
+    { title: "Lab Coat", image: "/images/labcoutuniform.png" },
+  ],
+  "chef-uniform":[
+        { title: "code : 1", image: "/images/hoteluniform/chef1.png" },
+        { title: "code : 1", image: "/images/hoteluniform/chef2.png" },
+        // { title: "code : 1", image: "/images/hoteluniform/chef3.png" },
+        { title: "code : 1", image: "/images/hoteluniform/chef4.png" },
+        { title: "code : 1", image: "/images/hoteluniform/chef5.png" },
+        { title: "code : 1", image: "/images/hoteluniform/chef6.png" },
+
+  ],
+  "butler-uniform":[
+        { title: "code : 1", image: "/images/hoteluniform/bulter1.png" },
+        { title: "code : 1", image: "/images/hoteluniform/bulter2.png" },
+        { title: "code : 1", image: "/images/hoteluniform/bulter3.png" },
+
+  ],
+  "house-cleaning-uniform":[
+            { title: "code : 1", image: "/images/hoteluniform/house1.png" },
+            { title: "code : 1", image: "/images/hoteluniform/house2.png" },
+
+  ],
+  "maybe":[
+    {  title: "Fire retardant Finished ", image: "Fire retardant Finished.jpg" },
+      { title: "Water & Stain repellant ", image: "/images/Water & Stain repellant.jpg" },
+      {  title: "Wrinkle free", image: "/images/Wrinkle free" },
+    ],
+  
+};

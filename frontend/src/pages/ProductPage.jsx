@@ -1,12 +1,11 @@
 import { useParams, Navigate } from "react-router-dom";
-import { categories, getProducts, productImages } from "../data/mockData";
+import { categories, productImages } from "../data/mockData";
 import CategoryCard from "../components/CategoryCard";
 import ProductCard from "../components/ProductCard";
 import Breadcrumbs from "../components/Breadcrumbs";
 import "../styles/ProductPage.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { MdGridView, MdViewList } from "react-icons/md";
-import { useState } from "react";
 
 const ProductPage = () => {
   const { categoryId, subcategoryId, optionId } = useParams();
@@ -73,6 +72,10 @@ const ProductPage = () => {
       ? subcategory.options.find((o) => o.id === optionId)
       : null;
 
+  if (optionId && hasOptions && !option) {
+    return <Navigate to={`/category/${categoryId}/${subcategoryId}`} replace />;
+  }
+
   const breadcrumbItems = [
     { label: category.name, path: `/category/${category.id}` },
     {
@@ -83,8 +86,10 @@ const ProductPage = () => {
   if (option) breadcrumbItems.push({ label: option.name });
 
   const key = optionId ? `${subcategoryId}-${optionId}` : subcategoryId;
-  const products =
-    productImages[key] || getProducts(categoryId, subcategoryId, optionId);
+
+  // Only use productImages — NO getProducts fallback, so no dummy 12 images
+  const products = productImages[key] || [];
+
   const title = option ? `${subcategory.name}` : subcategory.name;
   const subtitle = option ? option.name : null;
 
@@ -103,7 +108,6 @@ const ProductPage = () => {
           </div>
         </div>
 
-        {/* Decorative lines */}
         <div className="pp-hero-deco">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="pp-deco-line" style={{ animationDelay: `${i * 0.1}s` }} />
@@ -111,47 +115,55 @@ const ProductPage = () => {
         </div>
       </div>
 
-      {/* ── TOOLBAR ── */}
-      <div className="pp-toolbar">
-        <div className="pp-toolbar-inner">
-          <p className="pp-count">
-            <strong>{products.length}</strong> products found
-          </p>
-          <div className="pp-view-toggle">
-            <button
-              className={`pp-view-btn ${viewMode === "grid" ? "active" : ""}`}
-              onClick={() => setViewMode("grid")}
-              aria-label="Grid view"
-            >
-              <MdGridView />
-            </button>
-            <button
-              className={`pp-view-btn ${viewMode === "list" ? "active" : ""}`}
-              onClick={() => setViewMode("list")}
-              aria-label="List view"
-            >
-              <MdViewList />
-            </button>
+      {/* ── TOOLBAR — only show when there are products ── */}
+      {products.length > 0 && (
+        <div className="pp-toolbar">
+          <div className="pp-toolbar-inner">
+            <p className="pp-count">
+              <strong>{products.length}</strong> products found
+            </p>
+            <div className="pp-view-toggle">
+              <button
+                className={`pp-view-btn ${viewMode === "grid" ? "active" : ""}`}
+                onClick={() => setViewMode("grid")}
+                aria-label="Grid view"
+              >
+                <MdGridView />
+              </button>
+              <button
+                className={`pp-view-btn ${viewMode === "list" ? "active" : ""}`}
+                onClick={() => setViewMode("list")}
+                aria-label="List view"
+              >
+                <MdViewList />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
-      {/* ── PRODUCTS ── */}
+      {/* ── PRODUCTS or EMPTY STATE ── */}
       <div className="pp-body">
-        <div className={`pp-grid ${viewMode === "list" ? "pp-grid-list" : "pp-grid-4"}`}>
-          {products.map((product, i) => (
-            <div
-              key={product.id}
-              className="pp-card-wrap"
-              style={{ animationDelay: `${i * 0.06}s` }}
-            >
-              <ProductCard
-                title={product.title}
-                image={product.image}
-              />
-            </div>
-          ))}
-        </div>
+        {products.length === 0 ? (
+          <div className="pp-empty">
+            <p>No products available yet. Please check back soon.</p>
+          </div>
+        ) : (
+          <div className={`pp-grid ${viewMode === "list" ? "pp-grid-list" : "pp-grid-4"}`}>
+            {products.map((product, i) => (
+              <div
+                key={product.title + i}
+                className="pp-card-wrap"
+                style={{ animationDelay: `${i * 0.06}s`, cursor: "default" }}
+              >
+                <ProductCard
+                  title={product.title}
+                  image={product.image}
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
     </div>

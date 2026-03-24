@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 import "../styles/CategoryCard.css";
 
 const CategoryCard = ({ to, image, title }) => {
-  return (
-    <Link to={to} className="cc-card">
+  // If no `to` prop, render as a non-clickable div
+  const Wrapper = to ? Link : "div";
+  const wrapperProps = to
+    ? { to, className: "cc-card" }
+    : { className: "cc-card cc-card--static" };
 
-      {/* Image */}
+  return (
+    <Wrapper {...wrapperProps}>
       <div className="cc-image-wrap">
         <img
           src={image || "/images/default.jpg"}
@@ -13,17 +17,13 @@ const CategoryCard = ({ to, image, title }) => {
           className="cc-image"
           loading="lazy"
         />
-
-       
       </div>
 
-      {/* Title */}
       <div className="cc-info">
         <h3 className="cc-title">{title}</h3>
-        <span className="cc-dot">✦</span>
+        {to && <span className="cc-dot">✦</span>}
       </div>
-
-    </Link>
+    </Wrapper>
   );
 };
 

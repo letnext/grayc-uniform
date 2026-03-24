@@ -1,10 +1,10 @@
 import { useParams, Navigate } from "react-router-dom";
-import { categories } from "../data/mockData";
+import { categories, productImages } from "../data/mockData";
 import CategoryCard from "../components/CategoryCard";
 import "../styles/CategoryPage.css";
 import { useEffect } from "react";
 
-const CategoryPage = () => {
+const ProductPage = () => {
   const { categoryId } = useParams();
 
   useEffect(() => {
@@ -30,7 +30,6 @@ const CategoryPage = () => {
           </p>
         </div>
 
-        {/* Deco lines */}
         <div className="cp-hero-deco">
           {[...Array(6)].map((_, i) => (
             <div
@@ -45,19 +44,29 @@ const CategoryPage = () => {
       {/* ── GRID ── */}
       <div className="cp-body">
         <div className="cp-grid">
-          {category.subcategories.map((sub, i) => (
-            <div
-              key={sub.id}
-              className="cp-card-wrap"
-              style={{ animationDelay: `${i * 0.07}s` }}
-            >
-              <CategoryCard
-                to={`/category/${categoryId}/${sub.id}`}
-                image={sub.image}
-                title={sub.name}
-              />
-            </div>
-          ))}
+          {category.subcategories.map((sub, i) => {
+            const hasOptions = sub.options && sub.options.length > 0;
+
+            // Has options → always navigate (options page will show)
+            // Has products in productImages → navigate
+            // Neither → no navigation (card is static)
+            const hasProducts = !!productImages[sub.id];
+            const shouldNavigate = hasOptions || hasProducts;
+
+            return (
+              <div
+                key={sub.id}
+                className="cp-card-wrap"
+                style={{ animationDelay: `${i * 0.07}s` }}
+              >
+                <CategoryCard
+                  to={shouldNavigate ? `/category/${categoryId}/${sub.id}` : undefined}
+                  image={sub.image}
+                  title={sub.name}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -65,4 +74,4 @@ const CategoryPage = () => {
   );
 };
 
-export default CategoryPage;
+export default ProductPage;

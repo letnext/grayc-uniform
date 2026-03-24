@@ -17,14 +17,11 @@ const ProductCard = ({ image, title }) => {
             </div>
           </div>
         )}
-
-      
       </div>
 
-      {/* Title bar */}
+      {/* Title bar — arrow removed, no navigation */}
       <div className="pc-info">
         <h3 className="pc-title">{title}</h3>
-        <span className="pc-arrow">→</span>
       </div>
 
     </div>

@@ -4,7 +4,7 @@
 :root {
   --cp-cream:   #f7f3ee;
   --cp-warm:    #ede6da;
-  --cp-dark:    #1c1a16;
+  --cp-dark:    #00204c;
   --cp-mid:     #5a5448;
   --cp-gold:    #b8955a;
   --cp-gold-lt: #d4b07a;
@@ -164,4 +164,51 @@
   .cp-body        { padding: 28px 16px 48px; }
   .cp-title       { font-size: 2.2rem; }
   .cp-grid        { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+
+/* ═══════════════════ RESPONSIVE ADDITIONS ═══════════════════ */
+
+/* Large desktop: 4 columns */
+@media (min-width: 1200px) {
+  .cp-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+
+/* Tablet landscape: explicit 3 columns with tighter padding */
+@media (min-width: 901px) and (max-width: 1199px) {
+  .cp-hero-inner { padding: 0 36px; }
+  .cp-body       { padding: 44px 36px 72px; }
+  .cp-grid       { grid-template-columns: repeat(3, 1fr); gap: 18px; }
+}
+
+/* Tablet portrait (501–900px): 2-column grid, hide deco */
+@media (min-width: 501px) and (max-width: 900px) {
+  .cp-title      { font-size: clamp(2rem, 4vw, 2.8rem); }
+  .cp-subtitle   { font-size: 12px; }
+  .cp-eyebrow    { font-size: 10px; }
+}
+
+/* Mobile (≤500px): single column grid */
+@media (max-width: 500px) {
+  .cp-grid       { grid-template-columns: 1fr; gap: 14px; }
+  .cp-card-wrap  { animation-duration: 0.4s; }
+}
+
+/* Touch devices: disable hover-dependent animations */
+@media (hover: none) {
+  .cp-deco-line  { animation: none; height: 120px; }
+}
+
+/* Reduced motion: respect user preference */
+@media (prefers-reduced-motion: reduce) {
+  .cp-card-wrap,
+  .animate-fade-in,
+  .cp-deco-line {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    height: 120px;
+  }
 }

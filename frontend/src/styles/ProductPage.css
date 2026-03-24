@@ -4,7 +4,7 @@
 :root {
   --pp-cream:   #f7f3ee;
   --pp-warm:    #ede6da;
-  --pp-dark:    #1c1a16;
+  --pp-dark:    #00204c;
   --pp-mid:     #5a5448;
   --pp-gold:    #b8955a;
   --pp-gold-lt: #d4b07a;
@@ -238,4 +238,10 @@
 
   .pp-grid-4,
   .pp-grid-list   { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
+.pp-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--color-text-secondary, #888);
+  font-size: 1rem;
 }
