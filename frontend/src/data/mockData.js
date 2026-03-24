@@ -98,21 +98,13 @@ export const categories = [
         id: "bath-towels",
         name: "Bath Towels - 75cm*150cm",
         image: "/images/homefuriture/bathtowel.jpg",
-        options: [
-          { id: "cotton", name: "100% Combed Cotton ", image: "/images/homefuriture/towel1.jpg" },
-          { id: "100-cotton", name: "100% Cotton Premium Waffle ", image: "/images/homefuriture/towel2.jpg" },
-          { id: "bamboo", name: "Viscose/Bamboo blended", image: "/images/homefuriture/towel3.jpg" },
-        ],
+        
       },
       {
         id: "bed-sheet-pillow-covers",
         name: "Bed Sheet - 60*90/90*100/108*108 inches with Pillow Covers - 18*27 inches",
         image: "/images/homefuriture/pillow.jpg",
-        options: [
-          { id: "satin", name: "Satin Stripes", image: "/images/homefuriture/pillow1.jpg" },
-          { id: "yarn", name: "Yarn Byed Stripes", image: "/images/homefuriture/pillow2.jpg" },
-          { id: "jaquard", name: "Jaquard ", image: "/images/homefuriture/pillow3.jpg" },
-        ],
+       
       },
     ],
   },
@@ -232,5 +224,14 @@ export const productImages = {
       { title: "Water & Stain repellant ", image: "/images/Water & Stain repellant.jpg" },
       {  title: "Wrinkle free", image: "/images/Wrinkle free" },
     ],
-  
+  "bath-towels":[
+ {  title: "100% Combed Cotton ", image: "/images/homefuriture/towel1.jpg" },
+          {  title: "100% Cotton Premium Waffle ", image: "/images/homefuriture/towel2.jpg" },
+          {  title: "Viscose/Bamboo blended", image: "/images/homefuriture/towel3.jpg" },
+  ],
+  "bed-sheet-pillow-covers":[
+ {  title: "Satin Stripes", image: "/images/homefuriture/pillow1.jpg" },
+          {  title: "Yarn Byed Stripes", image: "/images/homefuriture/pillow2.jpg" },
+          { title: "Jaquard ", image: "/images/homefuriture/pillow3.jpg" },
+  ]
 };
