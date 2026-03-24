@@ -38,12 +38,7 @@ export const categories = [
         id: "theater-uniform",
         name: "Theater Uniforms",
         image: "/images/theateruniform.jpg",
-        options: [
-          { id: "Surgical Item", name: "Surgical Item", image: "/images/therateruniform/all.png" },
-          { id: "pyjammaset", name: "pyjamma set", image: "/images/therateruniform/pyjammaset.jpeg" },
-          { id: "orthopaedic", name: "orthopaedic Apron", image: "/images/therateruniform/ortho.jpeg" },
-          { id: "shape-leggings", name: "large leggins 18 inches * 36 inches", image: "/images/therateruniform/largeleggin.png" },
-        ],
+        
       },
       { id: "bed-sheet-pillow", name: "Bed Sheet & Pillow cover", image: "/images/pillow.jpg" },
     ],
@@ -168,6 +163,12 @@ export const productImages = {
           { title: "Pant / Shirt", image: "/images/tnnurse/girl2.png" },
     
 
+  ],
+  "theater-uniform":[
+{ title: "Surgical Item", image: "/images/therateruniform/all.png" },
+          {  title: "pyjamma set", image: "/images/therateruniform/pyjammaset.jpeg" },
+          {  title: "orthopaedic Apron", image: "/images/therateruniform/ortho.jpeg" },
+          {  title: "large leggins 18 inches * 36 inches", image: "/images/therateruniform/largeleggin.png" },
   ],
 
   "nursing-uniform": [
