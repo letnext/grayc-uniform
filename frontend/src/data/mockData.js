@@ -71,7 +71,7 @@ export const categories = [
     subcategories: [
       { id: "technision-uniform", name: "Technision Uniform", image: "/images/staffuniform.jpg" },
       { id: "labour-uniform", name: "Labour Uniform", image: "/images/labouruniform.jpg" },
-      { id: "security-uniform", name: "Security Uniform", image: "/images/industryuniform/securityuniform.jpg" },
+      { id: "security-uniform", name: "Security Uniform", image: "/images/securityuniform.jpg" },
       { id: "fire-vendor-uniform", name: "Fire Retardant Uniform", image: "/images/fireuniform.png" },
       { id: "staff-uniform", name: "Staff Uniform", image: "/images/staff.png" },
     ],
