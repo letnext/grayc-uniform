@@ -25,7 +25,7 @@ function AboutSection() {
         {/* LEFT: Image + floating card */}
         <div className="about-image-wrap">
           <div className="about-img-frame">
-            <img src="/images/profile.jpg" alt="Gray's Uniform Team" />
+            <img src="/images/about.png" alt="Gray's Uniform Team" />
             {/* Floating badge */}
             <div className="about-float-badge">
               <span className="float-num">35+</span>

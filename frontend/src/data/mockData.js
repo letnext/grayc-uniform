@@ -71,7 +71,7 @@ export const categories = [
     subcategories: [
       { id: "technision-uniform", name: "Technision Uniform", image: "/images/staffuniform.jpg" },
       { id: "labour-uniform", name: "Labour Uniform", image: "/images/labouruniform.jpg" },
-      { id: "security-uniform", name: "Security Uniform", image: "/images/securityuniform.jpg" },
+      { id: "security-uniform", name: "Security Uniform", image:"/images/hotelsecuniform.jpg" },
       { id: "fire-vendor-uniform", name: "Fire Retardant Uniform", image: "/images/fireuniform.png" },
       { id: "staff-uniform", name: "Staff Uniform", image: "/images/staff.png" },
     ],
@@ -116,7 +116,7 @@ export const categories = [
       { id: "yes", name: "100% Linen-Solid/Stripes,checked & Printed", image: "/images/fabric/fabric1.jpg" },
       { id: "no", name: "100% Modal-Solid/Stripes,checked & Printed", image: "/images/fabric/fabric2.jpg" },
       { id: "maybe", name: "All type of Yarn dyed , Fabric dyed & Printed fabrics. ", image: "/images/fabric/fabric3.jpg" },
-      { id: "may", name: "Specilized Category", image: "/images/fabric/fabric4.png" },
+      // { id: "may", name: "Specilized Category", image: "/images/fabric/fabric4.png" },
       // { id: "maybe", name: "Fire retardant Finished ", image: "/images/fabric/fabric2.jpg" },
       // { id: "maybe", name: "Water & Stain repellant ", image: "/images/fabric/fabric2.jpg" },
       // { id: "maybe", name: "Wrinkle free", image: "/images/fabric/fabric2.jpg" },
@@ -220,9 +220,8 @@ export const productImages = {
 
   ],
   "maybe":[
-    {  title: "Fire retardant Finished ", image: "Fire retardant Finished.jpg" },
-      { title: "Water & Stain repellant ", image: "/images/Water & Stain repellant.jpg" },
-      {  title: "Wrinkle free", image: "/images/Wrinkle free" },
+      { image: "/images/special/special.png" },
+      
     ],
   "bath-towels":[
  {  title: "100% Combed Cotton ", image: "/images/homefuriture/towel1.jpg" },

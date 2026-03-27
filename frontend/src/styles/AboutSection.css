@@ -344,8 +344,11 @@
   }
 
   .about-float-badge {
-    right: 16px;
-    bottom: 16px;
+     position: relative;
+     bottom: 32px;
+     width: 160px;
+     left: 163px;
+     
   }
 
   .about-deco-lines {
