@@ -72,8 +72,8 @@ const Footer = () => {
             </li>
             <li>
               <MdEmail className="footer-icon" />
-              <a href="mailto:rajveltextile@gmail.com" className="footer-link">
-                rajveltextile@gmail.com
+              <a href="mailto:info@graycuniforms.in" className="footer-link">
+                info@graycuniforms.in
               </a>
             </li>
           </ul>

@@ -81,8 +81,8 @@ const Header = () => {
 
         {/* Contact at bottom */}
         <div className="sidebar-footer">
-          <a href="mailto:rajveltextile@gmail.com" className="sidebar-contact">
-            rajveltextile@gmail.com
+          <a href="mailto:info@graycuniforms.in" className="sidebar-contact">
+            info@graycuniforms.in
           </a>
           <a href="tel:9965082985" className="sidebar-contact">
             +91 99650 82985
