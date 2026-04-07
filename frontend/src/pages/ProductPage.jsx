@@ -167,6 +167,9 @@ const ProductPage = () => {
       </div>
 
     </div>
+
+
+
   );
 };
 
